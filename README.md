@@ -28,6 +28,11 @@ value, if found. Otherwise, the function is called and its value is cached and r
 
 The cache has no eviction mechanism apart from being cleared after the read action completes.
 
+## Tips
+
+* Avoid `ListScope` class in MPS 2020.3 and use `NamedElementsScope` instead as its `contains` implementation is faster.
+* It might make sense to convert a sequence into a set to speed up `Scope#contains` even more.
+
 ## Example code
 
 The `com.spclngs.ScopeCacheKeys` class provides some convenience cache keys for use in scope providers or inline scopes.
@@ -89,8 +94,8 @@ all of them use a default, non-optimal, implementation of `contains()` which com
 In other cases, it may even be the only feasible way of working with the scope. An optimized `contains()` may be more
 difficult to write than `getAvailableElements()`, and both have to be kept in sync.
 
-To summarize, when checking whether a reference points to a valid target, we often need to compute the available
-elements for the scope of the reference, and then check whether they contain the reference target.
+To summarize, when checking whether a reference points to a target in scope, we often compute the available elements for
+the scope, check whether the sequence of elements contains a single reference target, and then throw it away.
 
 ## Many references have the same scope
 
