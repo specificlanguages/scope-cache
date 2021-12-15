@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/com.specificlanguages/scope-cache.svg)](https://jitpack.io/#com.specificlanguages/scope-cache)
+[![](https://jitpack.io/v/com.spclngs/scope-cache.svg)](https://jitpack.io/#com.spclngs/scope-cache)
 
 # Scope Cache for MPS 2020.3
 
