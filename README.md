@@ -36,8 +36,7 @@ The cache has no eviction mechanism apart from being cleared after the read acti
 ## Example code
 
 The `com.spclngs.ScopeCacheKeys` class provides some convenience cache keys for use in scope providers or inline scopes.
-You are also free to use your own keys. Take care when choosing keys as reusing the same key for two scopes will lead to
-bugs.
+You are also free to use your own keys. Choose keys carefully as reusing the same key for two scopes will lead to bugs.
 
 In a `ScopeProvider`:
 
