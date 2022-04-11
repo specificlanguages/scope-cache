@@ -1,5 +1,5 @@
 plugins {
-    id("com.specificlanguages.mps") version "1.2.1"
+    id("com.specificlanguages.mps") version "1.3.0"
     `maven-publish`
 }
 
@@ -9,11 +9,11 @@ repositories {
 }
 
 dependencies {
-    "mps"("com.jetbrains:mps:2020.3.5")
+    "mps"("com.jetbrains:mps:2021.1.4")
 }
 
 group = "com.spclngs"
-version = "1.0.0"
+version = "2.0.0"
 
 publishing {
     publications {

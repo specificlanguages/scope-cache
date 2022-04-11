@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/com.spclngs/scope-cache.svg)](https://jitpack.io/#com.spclngs/scope-cache)
 
-# Scope Cache for MPS 2020.3
+# Scope Cache for MPS 2021.1
 
 Speed up reference checks on large models by caching scopes. Inspired by the scope cache in MPS 2021.2
 (`EvaluateScopeContext`) but different.
@@ -15,7 +15,7 @@ following coordinates:
 ```xml
 <groupId>com.spclngs</groupId>
 <artifactId>scope-cache</artifactId>
-<version>1.0.0</version>
+<version>2.0.0</version>
 <type>zip</type>
 ```
 
@@ -28,9 +28,13 @@ value, if found. Otherwise, the function is called and its value is cached and r
 
 The cache has no eviction mechanism apart from being cleared after the read action completes.
 
+## Versioning
+
+Version 1.x supports MPS 2020.3, version 2.x supports MPS 2021.1
+
 ## Tips
 
-* Avoid `ListScope` class in MPS 2020.3 and use `NamedElementsScope` instead as its `contains` implementation is faster.
+* Avoid `ListScope` class in MPS 2021.1 and use `NamedElementsScope` instead as its `contains` implementation is faster.
 * It might make sense to convert a sequence into a set to speed up `Scope#contains` even more.
 
 ## Example code
