@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/com.spclngs/scope-cache.svg)](https://jitpack.io/#com.spclngs/scope-cache)
 
-# Scope Cache for MPS 2021.2
+# Scope Cache for MPS 2021.3
 
 Speed up reference checks on large models by caching scopes. Inspired by the built-in scope cache in MPS 2021.2
 (`EvaluateScopeContext`) but different.
@@ -30,7 +30,7 @@ The cache has no eviction mechanism apart from being cleared after the read acti
 
 ## Versioning
 
-Version 1.x supports MPS 2020.3, version 2.x supports MPS 2021.1, version 3.x supports MPS 2021.2.
+Version 4.x supports MPS 2021.3.
 
 ## Tips
 

@@ -9,11 +9,11 @@ repositories {
 }
 
 dependencies {
-    "mps"("com.jetbrains:mps:2021.2.6")
+    "mps"("com.jetbrains:mps:2021.3.2")
 }
 
 group = "com.spclngs"
-version = "3.0.0"
+version = "4.0.0"
 
 publishing {
     publications {
